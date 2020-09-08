@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/script/style.css" type="text/css">
+<title>일정시간 지나면 이미지 변환</title>
+<script type="text/javascript">
+<!--
+var img=new Array();
+img[0]=new Image(); img[0].src="mimage/m2.png";
+img[1]=new Image(); img[1].src="mimage/m3.png";
+img[2]=new Image(); img[2].src="mimage/m4.png";
+img[3]=new Image(); img[3].src="mimage/m5.png";
+img[4]=new Image(); img[4].src="mimage/m6.png";
+img[5]=new Image(); img[5].src="mimage/m7.png";
+img[6]=new Image(); img[6].src="mimage/m8.png";
+img[7]=new Image(); img[7].src="mimage/m9.png";
+img[8]=new Image(); img[8].src="mimage/m10.png";
+img[9]=new Image(); img[9].src="mimage/m11.png";
+img[10]=new Image(); img[10].src="mimage/m12.png";
+img[11]=new Image(); img[11].src="mimage/m13.png";
+img[12]=new Image(); img[12].src="mimage/m14.png";
+img[13]=new Image(); img[13].src="mimage/m15.png";
+img[14]=new Image(); img[14].src="mimage/m16.png";
+img[15]=new Image(); img[15].src="mimage/m17.png";
+img[16]=new Image(); img[16].src="mimage/m18.png";
+img[17]=new Image(); img[17].src="mimage/m19.png";
+img[18]=new Image(); img[18].src="mimage/m20.png";
+var interval=1200;
+var n=0;
+var imgs = new Array("mimage/m.png","mimage/m2.png","mimage/m3.png","mimage/m4.png","mimage/m5.png","mimage/m6.png","mimage/m7.png","mimage/m8.png","mimage/m9.png","mimage/m10.png","mimage/m11.png","mimage/m12.png","mimage/m13.png","mimage/m14.png","mimage/m15.png","mimage/16.png","mimage/m17.png","mimage/m18.png","mimage/m19.png","mimage/m20.png");
+function rotate()
+{
+if(navigator.appName=="Netscape" && document.getElementById)
+{
+document.getElementById("slide").src=imgs[n];
+}
+else document.images.slide.src=imgs[n];
+(n==(imgs.length-1))?n=0:n++;
+setTimeout("rotate()",interval);
+}
+// -->
+</script>
+
+
+<style type="text/css">
+	body{overflow:hidden;}
+	img{
+		width: 100%;
+ 		position: absolute;	top: 0px; left: 0px;
+	}
+
+
+</style>
+
+</head>
+<body onload="rotate()">
+<center><br /><br />
+<img src="mimage/m.png" id="slide">
+</body>
+</html>

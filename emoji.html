@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/script/style.css" type="text/css">
+<title>일정시간 지나면 이미지 변환</title>
+<script type="text/javascript">
+<!--
+var img=new Array();
+img[0]=new Image(); img[0].src="mimage/e2.jpg";
+img[1]=new Image(); img[1].src="mimage/e3.jpg";
+var interval=1200;
+var n=0;
+var imgs = new Array("mimage/e1.jpg","mimage/e2.jpg","mimage/e3.jpg");
+function rotate()
+{
+if(navigator.appName=="Netscape" && document.getElementById)
+{
+document.getElementById("slide").src=imgs[n];
+}
+else document.images.slide.src=imgs[n];
+(n==(imgs.length-1))?n=0:n++;
+setTimeout("rotate()",interval);
+}
+// -->
+</script>
+
+
+<style type="text/css">
+	body{overflow:hidden;}
+	img{
+		width: 100%;
+ 		position: absolute;	top: 0px; left: 0px;
+	}
+
+
+</style>
+
+</head>
+<body onload="rotate()">
+<center><br /><br />
+<img src="mimage/e1.jpg" id="slide">
+</body>
+</html>
