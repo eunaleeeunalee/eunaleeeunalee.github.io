@@ -86,11 +86,15 @@ h3{
 
 a {
   text-decoration:none;
-  color:inherit;
+  color: #424242;
+}
+
+a:hover{
+  color: #424242;
 }
 
 hr {
-  border: 0.15vh solid #424242;
+  border: 0.075vw solid #424242;
   margin: 0 1vw;
   opacity: 1;
 }
@@ -98,7 +102,14 @@ hr {
 
 @media only screen and (max-width: 768px){
   body{
-    font-size: 22px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  h1{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 24px;
   }
 }
 `;

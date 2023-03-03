@@ -22,7 +22,7 @@ function App() {
     <QueryClientProvider client={client}>
     <Router>
       <Helmet>
-        <title>REACTFLIX</title>
+        <title>Euna Lee</title>
       </Helmet>
       <Switch>
 
